@@ -1,11 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Roboto Mono', monospace;
-  background-color: var(--bg-primary);
   color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 30% 10%, rgba(49, 57, 63, 0.06) 0%, transparent 50%),
+    linear-gradient(rgba(77, 159, 224, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 159, 224, 0.04) 1px, transparent 1px);
+  background-size: auto, 40px 40px, 40px 40px;
+  cursor: default;
 }

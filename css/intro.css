@@ -1,0 +1,135 @@
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1500px;
+  margin: 3rem auto 0;
+  padding: 3rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid var(--accent);
+  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+  flex-shrink: 0;
+}
+
+.status-label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.statement {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.contact-panel {
+  max-width: 1500px;
+  margin: 2rem auto 1.5rem;
+  padding: 0 3rem;
+}
+
+.contact-list {
+  list-style: none;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  padding: 1.5rem 2rem;
+  
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.contact-list i {
+  color: var(--accent);
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.contact-label {
+  color: var(--text-secondary);
+  width: 90px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact-list a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loadout-panel {
+  max-width: 1200px;
+  margin: 2rem auto 4rem;
+  padding: 2rem 3rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.panel-label {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.loadout-slots {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.slot {
+  flex: 1;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.slot-label {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.slot-value {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}

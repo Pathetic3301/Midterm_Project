@@ -1,3 +1,8 @@
+  header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  }
 .navbar {
   display: flex;
   align-items: center;
@@ -5,9 +10,9 @@
   padding: 1rem 4rem 1rem 3rem;
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
+  z-index: 1000;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -16,7 +21,7 @@
   color: var(--text-primary);
   letter-spacing: 1px;
   text-decoration: none;
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  transition: color 0.5s ease, letter-spacing 0.7s ease;
 }
 
 .logo:hover {
@@ -42,7 +47,7 @@
   text-decoration: none;
   color: var(--text-secondary);
   font-weight: bold;
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  transition: color 0.5s ease, letter-spacing 0.7s ease;
 }
 
 .nav-links > li > a:hover {
@@ -82,10 +87,22 @@
   padding: 0.5rem 1rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.5s ease;
 }
 
 .dropdown-menu li a:hover {
   background-color: var(--bg-primary);
   color: var(--accent);
+}
+
+ footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 3rem;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
 }
