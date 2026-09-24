@@ -45,7 +45,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateX(-8px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
 
 .logo-home:hover .home-tooltip {

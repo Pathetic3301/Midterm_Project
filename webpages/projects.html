@@ -8,99 +8,117 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Link to Font Awesome Icon-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<!-- Link to the CSS files -->
 		<link rel="stylesheet" href="../css/variables.css">
 		<link rel="stylesheet" href="../css/base.css">
 		<link rel="stylesheet" href="../css/nav.css">
 		<!-- Link to the Page Related CSS files -->
-        <link rel="stylesheet" href="../css/projects.css">
+		<link rel="stylesheet" href="../css/projects.css">
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
 				<div class="logo-home">
-				<a href="../index.html" class="logo">
-					<i class="fa-solid fa-house"></i>
-					<span class="home-tooltip">Return Home</span>
+					<a href="../index.html" class="logo">
+						<i class="fa-solid fa-gear"></i>
+						<span class="home-tooltip">
+							Return Home?
+							<i class="fa-solid fa-house"></i>
+						</span>
 					</a>
 				</div>
 
 				<ul class="nav-links">
-				<li class="dropdown">
-					<a href="about.html">About Me</a>
-					<ul class="dropdown-menu">
-					<li><a href="about.html#about-me">About Me</a></li>
-					<li><a href="about.html#skills">Skills</a></li>
-					<li><a href="about.html#journey">Computing Journey</a></li>
-					</ul>
-				</li>
+					<li class="dropdown">
+						<a href="about.html">About Me</a>
+						<ul class="dropdown-menu">
+							<li><a href="about.html#about-me">About Me</a></li>
+							<li><a href="about.html#skills">Skills</a></li>
+							<li><a href="about.html#journey">Computing Journey</a></li>
+						</ul>
+					</li>
 
-				<li class="dropdown">
-					<a href="projects.html">Projects</a>
-					<ul class="dropdown-menu">
-					<li><a href="projects.html#projects">Projects</a></li>
-					<li><a href="projects.html#career-goal">Career Goal</a></li>
-					</ul>
-				</li>
+					<li class="dropdown">
+						<a href="projects.html">Projects</a>
+						<ul class="dropdown-menu">
+							<li><a href="projects.html#projects">Projects</a></li>
+							<li><a href="projects.html#career-goal">Career Goal</a></li>
+						</ul>
+					</li>
 
-				<li class="dropdown">
-					<a href="concepts.html">Concepts</a>
-					<ul class="dropdown-menu">
-					<li><a href="concepts.html#history">History</a></li>
-					<li><a href="concepts.html#computer-systems">Computer Systems</a></li>
-					<li><a href="concepts.html#connected-world">Connected World</a></li>
-					<li><a href="concepts.html#cybersecurity">Cybersecurity</a></li>
-					</ul>
-				</li>
+					<li class="dropdown">
+						<a href="concepts.html">Concepts</a>
+						<ul class="dropdown-menu">
+							<li><a href="concepts.html#history">History</a></li>
+							<li><a href="concepts.html#computer-systems">Computer Systems</a></li>
+							<li><a href="concepts.html#connected-world">Connected World</a></li>
+							<li><a href="concepts.html#cybersecurity">Cybersecurity</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</header>
+
 		<main>
-            <section id="project-1" class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="../images/hangar-screenshot.png" alt="Screenshot of The Hangar website" class="project-image">
-                    </div>
-                        <div class="project-content">
-                            <h3>The Hangar</h3>
-                                <p class="project-desc">
-                                A themed portfolio-style website organized around real aircraft role classifications. Combat, Fighter, and Attack sections are fully built out with a card-based landing page, dropdown navigation, and custom CSS styling. The remaining aircraft-role pages link to a custom 404 page (a "Work in Progress" screen) since the site was submitted to my previous school before those sections were completed.
-                                </p>
-                            <p><span class="project-label">Role:</span> Solo developer</p>
-                            <p><span class="project-label">Tools:</span> HTML, CSS</p>
 
-                            <div class="project-links">
-                            <a href="https://pathetic3301.github.io/Website-PT/" target="_blank" class="project-btn primary">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
-                            </a>
-                            <a href="https://github.com/Pathetic3301/Website-PT" target="_blank" class="project-btn">
-                                <i class="fa-brands fa-github"></i> View Code
-                            </a>
-                            </div>
-                        </div>
-                    </section>
+			<div class="project-carousel">
+				<div class="carousel-track">
+					<section id="project-1" class="project-card carousel-slide">
+						<div class="project-image-wrapper">
+							<img src="../images/hangar-screenshot.png" alt="Screenshot of The Hangar website" class="project-image">
+						</div>
+						<div class="project-content">
+							<h3>The Hangar</h3>
+							<p class="project-desc">
+								A themed portfolio-style website organized around real aircraft role classifications. Combat, Fighter, and Attack sections are fully built out with a card-based landing page, dropdown navigation, and custom CSS styling. The remaining aircraft-role pages link to a custom 404 page (a "Work in Progress" screen) since the site was submitted to my previous school before those sections were completed.
+							</p>
+							<p><span class="project-label">Role:</span> Solo developer</p>
+							<p><span class="project-label">Tools:</span> HTML, CSS</p>
 
-                    <section id="project-2" class="project-card reverse">
-                        <div class="project-image-wrapper">
-                            <img src="../images/project2-placeholder.png" alt="Screenshot of [Project 2 Name]" class="project-image">
-                        </div>
-                        <div class="project-content">
-                            <h3>[Project 2 Title]</h3>
-                            <p class="project-desc">[Short description — fill in once decided.]</p>
-                            <p><span class="project-label">Role:</span> [Your role]</p>
-                            <p><span class="project-label">Tools:</span> [Tools used]</p>
+							<div class="project-links">
+								<a href="https://pathetic3301.github.io/Website-PT/" target="_blank" class="project-btn">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
+								</a>
+								<a href="https://github.com/Pathetic3301/Website-PT" target="_blank" class="project-btn">
+									<i class="fa-brands fa-github"></i> View Code
+								</a>
+							</div>
+						</div>
+					</section>
 
-                            <div class="project-links">
-                            <a href="#" target="_blank" class="project-btn primary">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
-                            </a>
-                            <a href="#" target="_blank" class="project-btn">
-                                <i class="fa-brands fa-github"></i> View Code
-                            </a>
-                            </div>
-                        </div>
-                    </section>
+					<section id="project-2" class="project-card carousel-slide">
+						<div class="project-image-wrapper">
+							<img src="../images/project2-placeholder.jpg" alt="Screenshot of [Project 2 Name]" class="project-image">
+						</div>
+						<div class="project-content">
+							<h3>[Project 2 Title]</h3>
+							<p class="project-desc">[Short description — fill in once decided.]</p>
+							<p><span class="project-label">Role:</span> [Your role]</p>
+							<p><span class="project-label">Tools:</span> [Tools used]</p>
 
+							<div class="project-links">
+								<a href="#" target="_blank" class="project-btn">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
+								</a>
+								<a href="#" target="_blank" class="project-btn">
+									<i class="fa-brands fa-github"></i> View Code
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+
+			</div>
+
+			<section id="goals" class="goal-panel">
+				<p class="status-label">Looking Ahead</p>
+				<h2>My Career Goal</h2>
+				<p class="goal-text">
+					[What kind of IT professional you want to become — fill in.]
+				</p>
+			</section>
 		</main>
 
 		<footer class="footer">
