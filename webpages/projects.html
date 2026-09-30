@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Projects | My Portfolio</title>
+		<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 		<!-- Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
 			<nav class="navbar">
 				<div class="logo-home">
 					<a href="../index.html" class="logo">
-						<i class="fa-solid fa-gear"></i>
+						<i class="fa-solid fa-diagram-project"></i>
 						<span class="home-tooltip">
 							Return Home?
 							<i class="fa-solid fa-house"></i>
@@ -34,7 +35,8 @@
 					<li class="dropdown">
 						<a href="about.html">About Me</a>
 						<ul class="dropdown-menu">
-							<li><a href="about.html#about-me">About Me</a></li>
+							<li><a href="about.html#interests">Interests</a></li>
+							<li><a href="about.html#education">Educational Background</a></li>
 							<li><a href="about.html#skills">Skills</a></li>
 							<li><a href="about.html#journey">Computing Journey</a></li>
 						</ul>
@@ -63,25 +65,38 @@
 
 		<main>
 
-			<div class="project-carousel">
+			<div id="projects" class="project-carousel">
+				<h1 class="project-page-title">Projects</h1>
+				<nav class="carousel-navigation" aria-label="Project navigation">
+					<a href="#project-1" class="carousel-nav-link" aria-label="Go to The Hangar project" title="The Hangar">
+						<i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>01</span>
+					</a>
+					<a href="#project-2" class="carousel-nav-link" aria-label="Go to the Personal Portfolio Website project" title="Personal Portfolio Website">
+						<span>02</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+					</a>
+				</nav>
 				<div class="carousel-track">
 					<section id="project-1" class="project-card carousel-slide">
-						<div class="project-image-wrapper">
+						<a href="https://pathetic3301.github.io/Website-PT/" target="_blank" rel="noopener noreferrer" class="project-image-wrapper" aria-label="Open The Hangar live site">
 							<img src="../images/hangar-screenshot.png" alt="Screenshot of The Hangar website" class="project-image">
-						</div>
+						</a>
 						<div class="project-content">
-							<h3>The Hangar</h3>
+							<h3><i class="fa-solid fa-plane heading-icon" aria-hidden="true"></i>The Hangar</h3>
 							<p class="project-desc">
-								A themed portfolio-style website organized around real aircraft role classifications. Combat, Fighter, and Attack sections are fully built out with a card-based landing page, dropdown navigation, and custom CSS styling. The remaining aircraft-role pages link to a custom 404 page (a "Work in Progress" screen) since the site was submitted to my previous school before those sections were completed.
+								A themed portfolio-style website organized around real aircraft role
+								classifications. Combat, Fighter, and Attack sections are fully built out with a
+								card-based landing page, dropdown navigation, and custom CSS styling. The remaining
+								aircraft-role pages link to a custom 404 page (a "Work in Progress" screen) since
+								the site was submitted to my previous school before those sections were completed.
 							</p>
-							<p><span class="project-label">Role:</span> Solo developer</p>
-							<p><span class="project-label">Tools:</span> HTML, CSS</p>
+							<p><span class="project-label"><i class="fa-solid fa-user heading-icon" aria-hidden="true"></i>Role:</span> Solo developer</p>
+							<p><span class="project-label"><i class="fa-solid fa-screwdriver-wrench heading-icon" aria-hidden="true"></i>Tools:</span> HTML, CSS</p>
 
 							<div class="project-links">
-								<a href="https://pathetic3301.github.io/Website-PT/" target="_blank" class="project-btn">
+								<a href="https://pathetic3301.github.io/Website-PT/" target="_blank" rel="noopener noreferrer" class="project-btn">
 									<i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
 								</a>
-								<a href="https://github.com/Pathetic3301/Website-PT" target="_blank" class="project-btn">
+								<a href="https://github.com/Pathetic3301/Website-PT" target="_blank" rel="noopener noreferrer" class="project-btn">
 									<i class="fa-brands fa-github"></i> View Code
 								</a>
 							</div>
@@ -89,20 +104,25 @@
 					</section>
 
 					<section id="project-2" class="project-card carousel-slide">
-						<div class="project-image-wrapper">
-							<img src="../images/project2-placeholder.jpg" alt="Screenshot of [Project 2 Name]" class="project-image">
-						</div>
+						<a href="https://pathetic3301.github.io/Midterm_Project/" target="_blank" rel="noopener noreferrer" class="project-image-wrapper" aria-label="Open the portfolio live site">
+							<img src="../images/Project_Portfolio.png" alt="Screenshot of the Personal Portfolio Website homepage" class="project-image">
+						</a>
 						<div class="project-content">
-							<h3>[Project 2 Title]</h3>
-							<p class="project-desc">[Short description — fill in once decided.]</p>
-							<p><span class="project-label">Role:</span> [Your role]</p>
-							<p><span class="project-label">Tools:</span> [Tools used]</p>
+							<h3><i class="fa-solid fa-laptop-code heading-icon" aria-hidden="true"></i>Personal Portfolio Website</h3>
+							<p class="project-desc">
+								An ongoing portfolio project that brings together my background, computing
+								interests, and work in one place. I am continuing to build and refine its pages as
+								I develop my skills in web design and front-end development.
+							</p>
+							<p><span class="project-label"><i class="fa-solid fa-hourglass-half heading-icon" aria-hidden="true"></i>Status:</span> Ongoing</p>
+							<p><span class="project-label"><i class="fa-solid fa-user heading-icon" aria-hidden="true"></i>Role:</span> Designer and developer</p>
+							<p><span class="project-label"><i class="fa-solid fa-screwdriver-wrench heading-icon" aria-hidden="true"></i>Tools:</span> HTML, CSS, Font Awesome</p>
 
 							<div class="project-links">
-								<a href="#" target="_blank" class="project-btn">
+								<a href="https://pathetic3301.github.io/Midterm_Project/" target="_blank" rel="noopener noreferrer" class="project-btn">
 									<i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Site
 								</a>
-								<a href="#" target="_blank" class="project-btn">
+								<a href="https://github.com/Pathetic3301/Midterm_Project" target="_blank" rel="noopener noreferrer" class="project-btn">
 									<i class="fa-brands fa-github"></i> View Code
 								</a>
 							</div>
@@ -112,17 +132,21 @@
 
 			</div>
 
-			<section id="goals" class="goal-panel">
-				<p class="status-label">Looking Ahead</p>
-				<h2>My Career Goal</h2>
+			<section id="career-goal" class="goal-panel">
+				<h2><i class="fa-solid fa-crosshairs heading-icon" aria-hidden="true"></i>Career Goal</h2>
 				<p class="goal-text">
-					[What kind of IT professional you want to become — fill in.]
+					I want to become an IT professional specializing in cybersecurity, with a particular
+					focus on operational security (OPSEC). My experience and comfort with
+					communication-related work, physical wiring, and networking setups give me a
+					practical foundation to build on. Over the next few years, I plan to strengthen my
+					networking and systems fundamentals before specializing further in OPSEC and defensive
+					security. Long term, I hope to protect real people and organizations from real threats.
 				</p>
 			</section>
 		</main>
 
 		<footer class="footer">
-			<p>&copy; 2026 [Placeholder Name]/[Placeholder Email]/[Placeholder Section]. Built for IT111.</p>
+			<p>&copy; 2026 Khim Paul Jamolin | wtlmeo2tr@mozmail.com | IT1R17. Built for IT111.</p>
 		</footer>
 	</body>
 </html>

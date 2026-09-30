@@ -1,18 +1,50 @@
-.page-intro {
-  max-width: 1500px;
-  margin: 3rem auto 1rem;
-  padding: 0 3rem;
-}
-
-.page-intro h1 {
-  font-size: 2.25rem;
-  margin-top: 0.5rem;
-}
-
 .project-carousel {
-  max-width: 1500px;
+  width: var(--site-width);
   margin: 2rem auto;
-  padding: 0 3rem;
+  scroll-margin-top: 5rem;
+}
+
+.project-page-title {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.carousel-nav-link {
+  display: inline-flex;
+  min-width: 3.25rem;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease, box-shadow 220ms ease;
+}
+
+.carousel-nav-link:hover,
+.carousel-nav-link:focus-visible {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-hover);
+  color: var(--text-primary);
+  box-shadow: 0 0 14px var(--glow-hover);
+}
+
+.carousel-nav-link:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 2px;
 }
 
 .carousel-track {
@@ -52,6 +84,7 @@
 .project-card {
   flex: 0 0 100%;
   scroll-snap-align: center;
+  scroll-margin-top: 7.5rem;
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -59,15 +92,28 @@
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px var(--shadow-panel);
 }
 
 .project-image-wrapper {
+  display: block;
   width: 55%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid var(--border);
   flex-shrink: 0;
+  transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.project-image-wrapper:hover,
+.project-image-wrapper:focus-visible {
+  border-color: var(--accent-hover);
+  box-shadow: 0 0 18px var(--glow-hover);
+}
+
+.project-image-wrapper:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 3px;
 }
 
 .project-image {
@@ -75,11 +121,6 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
-}
-
-.project-image-wrapper:hover .project-image {
-  transform: scale(1.08);
 }
 
 .project-content h3 {
@@ -100,38 +141,45 @@
 
 .project-links {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
 }
 
 .project-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.6rem 1.25rem;
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease, box-shadow 220ms ease;
 }
 
-.project-btn:hover {
-  background-color: var(--accent);
-  color: var(--bg-primary);
+.project-btn:hover,
+.project-btn:focus-visible {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-hover);
+  color: var(--text-primary);
+  box-shadow: 0 0 14px var(--glow-hover);
+}
+
+.project-btn:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 2px;
 }
 
 .goal-panel {
-  max-width: 1500px;
+  width: var(--site-width);
   margin: 3rem auto 4rem;
   padding: 2.5rem 3rem;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px var(--shadow-panel);
 }
 
 .goal-panel h2 {
@@ -142,4 +190,25 @@
 .goal-text {
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .project-image-wrapper {
+    width: 100%;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+  }
+
+  .goal-panel {
+    padding: 1.5rem;
+  }
 }

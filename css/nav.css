@@ -1,8 +1,9 @@
-  header{
+body > header {
   position: sticky;
   top: 0;
-  z-index: 1000;
-  }
+  z-index: 10000;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -10,9 +11,6 @@
   padding: 1rem 4rem 1rem 3rem;
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
-  z-index: 1000;
-  position: sticky;
-  top: 0;
 }
 .logo {
   display: flex;
@@ -126,7 +124,4 @@
   padding: 1.5rem  3.5rem;
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border);
-  position: sticky;
-  bottom: 0;
-  z-index: 1000;
 }

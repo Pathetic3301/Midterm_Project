@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>About Me | My Portfolio</title>
+		<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 		<!-- Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 		<link rel="stylesheet" href="../css/variables.css">
 		<link rel="stylesheet" href="../css/base.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<!-- Link to the Page Related CSS files -->
+		<link rel="stylesheet" href="../css/content.css">
 	</head>
 	<body>
 		<header>
@@ -32,7 +33,8 @@
 					<li class="dropdown">
 						<a href="about.html">About Me</a>
 						<ul class="dropdown-menu">
-							<li><a href="about.html#about-me">About Me</a></li>
+							<li><a href="about.html#interests">Interests</a></li>
+							<li><a href="about.html#education">Educational Background</a></li>
 							<li><a href="about.html#skills">Skills</a></li>
 							<li><a href="about.html#journey">Computing Journey</a></li>
 						</ul>
@@ -58,11 +60,99 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="content-page">
+			<header class="content-intro">
+				<p class="content-kicker">About Me</p>
+				<h1>Building toward a career in cybersecurity</h1>
+			</header>
+
+			<section id="about-me" class="content-section">
+				<h2><i class="fa-solid fa-user heading-icon" aria-hidden="true"></i>About Me</h2>
+				<p>
+					I have long been curious about how things work and drawn to logic. Computer science
+					videos first deepened my interest during the pandemic, and hands-on experimentation
+					has helped me learn along the way. I chose IT because it feels like a grounded,
+					practical way to explore how computing works. My long-term goal is to specialize in
+					operational security (OPSEC) and defensive cybersecurity to help protect real people
+					and organizations from real threats.
+				</p>
+			</section>
+
+			<section id="interests" class="content-section">
+				<h2><i class="fa-solid fa-lightbulb heading-icon" aria-hidden="true"></i>Interests</h2>
+				<p>
+					I am especially fascinated by cryptology and code-breaking. I also enjoy internet
+					ARGs and investigating the clues and information they bring together. Networking and
+					systems interest me as practical foundations for understanding how to protect people
+					and organizations through OPSEC and defensive security.
+				</p>
+			</section>
+
+			<section id="education" class="content-section education-section">
+				<h2><i class="fa-solid fa-graduation-cap heading-icon" aria-hidden="true"></i>Educational Background</h2>
+				<div class="education-grid">
+					<article class="education-entry">
+						<p class="education-level">Elementary / Grade 1</p>
+						<h3>Blanco Family Academy</h3>
+					</article>
+					<article class="education-entry">
+						<p class="education-level">Elementary / Grade 2</p>
+						<h3>Quisao Elementary School</h3>
+					</article>
+					<article class="education-entry">
+						<p class="education-level">Elementary / Grade 3</p>
+						<h3>Jeshua Septuagint School</h3>
+					</article>
+					<article class="education-entry">
+						<p class="education-level">Elementary / Grades 4-6</p>
+						<h3>Don Restituto Baol Central School</h3>
+					</article>
+					<article class="education-entry">
+						<p class="education-level">Junior High School</p>
+						<h3>Bulua National High School</h3>
+					</article>
+					<article class="education-entry">
+						<p class="education-level">Senior High School</p>
+						<h3>Informatics Computer Institute - Cagayan de Oro Center</h3>
+						<p>Student Council Vice President</p>
+					</article>
+					<article class="education-entry education-current">
+						<p class="education-level">College / First Year</p>
+						<h3>University of Science and Technology of Southern Philippines</h3>
+						<p>Bachelor of Science in Information Technology</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="skills" class="content-section">
+				<h2><i class="fa-solid fa-code heading-icon" aria-hidden="true"></i>My Skills</h2>
+				<ul class="skills-list">
+					<li><strong>HTML and CSS</strong><span>Building and styling multi-page websites.</span></li>
+					<li><strong>Programming foundations</strong><span>Beginner-level experience with Java, JavaScript, and Python; continuing to learn.</span></li>
+					<li><strong>Git and GitHub</strong><span>Managing project files and publishing websites with GitHub Pages.</span></li>
+					<li><strong>Communication and languages</strong><span>Comfortable connecting with people; fluent in Cebuano, English, and Filipino.</span></li>
+					<li><strong>Team leadership</strong><span>Served as Student Council Vice President at Informatics Computer Institute - Cagayan de Oro Center.</span></li>
+					<li><strong>Hands-on setup and troubleshooting</strong><span>Connecting and troubleshooting speakers, TVs, and other equipment.</span></li>
+				</ul>
+			</section>
+
+			<section id="journey" class="content-section">
+				<h2><i class="fa-solid fa-route heading-icon" aria-hidden="true"></i>My Computing Journey</h2>
+				<p>
+					My computing journey started before IT111, so the course is part of a longer path
+					rather than my first exposure to programming. One concept from IT111 that caught my
+					interest is cybersecurity. I am interested in how software fits into a larger
+					computing environment: the systems it runs on, the networks that connect it, the
+					physical infrastructure behind those networks, and the people who depend on it.
+					Understanding those layers helps explain where risks come from and how they can be
+					reduced. I plan to build on my coding experience by strengthening my networking and
+					systems fundamentals before specializing further in OPSEC and defensive security.
+				</p>
+			</section>
 		</main>
 
 		<footer class="footer">
-			<p>&copy; 2026 [Placeholder Name]/[Placeholder Email]/[Placeholder Section]. Built for IT111.</p>
+			<p>&copy; 2026 Khim Paul Jamolin | wtlmeo2tr@mozmail.com | IT1R17. Built for IT111.</p>
 		</footer>
 	</body>
 </html>

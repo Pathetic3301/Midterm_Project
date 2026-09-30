@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About Me | My Portfolio</title>
+		<title>Concepts | My Portfolio</title>
+		<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 		<!-- Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +14,14 @@
 		<link rel="stylesheet" href="../css/variables.css">
 		<link rel="stylesheet" href="../css/base.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<!-- Link to the Page Related CSS files -->
+		<link rel="stylesheet" href="../css/content.css">
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
 				<div class="logo-home">
 					<a href="../index.html" class="logo">
-						<i class="fa-solid fa-brain"></i>
+						<i class="fa-solid fa-book-open"></i>
 						<span class="home-tooltip">
 							Return Home?
 							<i class="fa-solid fa-house"></i>
@@ -32,7 +33,8 @@
 					<li class="dropdown">
 						<a href="about.html">About Me</a>
 						<ul class="dropdown-menu">
-							<li><a href="about.html#about-me">About Me</a></li>
+							<li><a href="about.html#interests">Interests</a></li>
+							<li><a href="about.html#education">Educational Background</a></li>
 							<li><a href="about.html#skills">Skills</a></li>
 							<li><a href="about.html#journey">Computing Journey</a></li>
 						</ul>
@@ -58,11 +60,68 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="content-page">
+			<header class="content-intro">
+				<p class="content-kicker">IT111 Concepts</p>
+				<h1>Ideas behind the technology we use</h1>
+			</header>
+
+			<section id="history" class="content-section">
+				<h2><i class="fa-solid fa-clock-rotate-left heading-icon" aria-hidden="true"></i>History of Computing</h2>
+				<h3>The microprocessor brings computing closer</h3>
+				<p>
+					The microprocessor brought a computer's central processing logic onto a single chip.
+					As the technology developed, computers could become smaller and more affordable,
+					helping computing move from large specialized machines into personal computers and,
+					later, mobile and embedded devices. That shift helped make computing part of everyday
+					life and laid important groundwork for the connected devices people use today.
+				</p>
+			</section>
+
+			<section id="computer-systems" class="content-section">
+				<h2><i class="fa-solid fa-microchip heading-icon" aria-hidden="true"></i>Computer Systems</h2>
+				<p>
+					The input-process-storage-output model is easy to see while building this portfolio:
+				</p>
+				<ol class="system-steps">
+					<li><strong>Input</strong><span>I type and edit HTML and CSS using a keyboard and other controls.</span></li>
+					<li><strong>Processing</strong><span>The browser reads the HTML and CSS, calculates the page layout, and prepares what to display.</span></li>
+					<li><strong>Storage</strong><span>The website's code and images are saved as files in the project and repository.</span></li>
+					<li><strong>Output</strong><span>The browser renders those files as the page you can read and interact with.</span></li>
+				</ol>
+			</section>
+
+			<section id="connected-world" class="content-section">
+				<h2><i class="fa-solid fa-globe heading-icon" aria-hidden="true"></i>Connected World</h2>
+				<p>
+					When someone visits this portfolio, their browser uses the domain name system (DNS)
+					to find the site's IP address. The browser sends a request using HTTPS across the
+					internet; network routers carry it to the server hosting the site. The server returns
+					the website files, and the browser processes them to display the page. In this case,
+					GitHub Pages hosts the published files from this project.
+				</p>
+			</section>
+
+			<section id="cybersecurity" class="content-section">
+				<h2><i class="fa-solid fa-shield-halved heading-icon" aria-hidden="true"></i>Cybersecurity Practices</h2>
+				<p>
+					The security habits I intend to apply to my own accounts and devices include:
+				</p>
+				<ul class="practice-list">
+					<li>Use a unique, strong password for each account and store passwords in a trusted password manager.</li>
+					<li>Enable multi-factor authentication (MFA), especially on email, cloud, and developer accounts.</li>
+					<li>Check the sender and destination address before opening links or entering credentials.</li>
+					<li>Install operating-system, browser, and application security updates promptly.</li>
+					<li>Be deliberate about what personal or account information I share publicly.</li>
+				</ul>
+				<p>
+					These habits connect to OPSEC: consider what information an action reveals, who could use it, and whether it needs to be shared.
+				</p>
+			</section>
 		</main>
 
 		<footer class="footer">
-			<p>&copy; 2026 [Placeholder Name]/[Placeholder Email]/[Placeholder Section]. Built for IT111.</p>
+			<p>&copy; 2026 Khim Paul Jamolin | wtlmeo2tr@mozmail.com | IT1R17. Built for IT111.</p>
 		</footer>
 	</body>
 </html>

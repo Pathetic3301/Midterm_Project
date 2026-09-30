@@ -16,9 +16,90 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   background-image:
-    radial-gradient(circle at 30% 10%, rgba(49, 57, 63, 0.06) 0%, transparent 50%),
-    linear-gradient(rgba(77, 159, 224, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(77, 159, 224, 0.04) 1px, transparent 1px);
-  background-size: auto, 40px 40px, 40px 40px;
+    linear-gradient(125deg, var(--background-highlight) 0%, var(--transparent) 35%, var(--background-highlight-soft) 65%, var(--transparent) 100%),
+    radial-gradient(circle at 30% 10%, var(--background-glow) 0%, var(--transparent) 50%),
+    linear-gradient(var(--background-grid) 1px, var(--transparent) 1px),
+    linear-gradient(90deg, var(--background-grid) 1px, var(--transparent) 1px);
+  background-size: 240% 240%, auto, 40px 40px, 40px 40px;
+  background-position: 0% 50%, 0 0, 0 0, 0 0;
+  animation: background-drift 12s ease-in-out infinite alternate;
   cursor: default;
+}
+
+@keyframes background-drift {
+  from {
+    background-position: 0% 50%, 0 0, 0 0, 0 0;
+  }
+
+  to {
+    background-position: 100% 50%, 0 0, 0 0, 0 0;
+  }
+}
+
+.heading-icon {
+  display: inline-block;
+  width: 1.25em;
+  margin-right: 0.55rem;
+  color: var(--accent-hover);
+  text-align: center;
+}
+
+.slot,
+.education-entry,
+.skills-list li,
+.system-steps li {
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.intro,
+.contact-list,
+.loadout-panel,
+.content-intro,
+.content-section,
+.project-card,
+.goal-panel {
+  transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .slot:hover,
+  .education-entry:hover,
+  .skills-list li:hover,
+  .system-steps li:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-hover);
+    box-shadow: 0 10px 24px var(--shadow-raised);
+  }
+
+  .intro:hover,
+  .contact-list:hover,
+  .loadout-panel:hover,
+  .content-intro:hover,
+  .content-section:hover,
+  .project-card:hover,
+  .goal-panel:hover {
+    border-color: var(--accent-hover);
+    box-shadow: 0 0 24px var(--glow-hover);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+
+  .slot,
+  .education-entry,
+  .skills-list li,
+  .system-steps li,
+  .project-card,
+  .intro,
+  .contact-list,
+  .loadout-panel,
+  .content-intro,
+  .content-section,
+  .project-image-wrapper,
+  .goal-panel {
+    transition: none;
+  }
 }

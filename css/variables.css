@@ -1,13 +1,23 @@
 :root {
   --bg-primary: #0f1418;
   --bg-secondary: #171d22;
-  --border: #2e3a42;
+  --border: #596c76;
 
   --text-primary: #e6edf3;
   --text-secondary: #a4b4bf;
 
-  --accent: #5c7d8d;
-  --accent-hover: #7fa2b3;
+  --accent: #8ebbd0;
+  --accent-hover: #b4deec;
   --silver: #b7c6cc;
   --alert: #8e3d3d;
+
+  --site-width: min(85vw, 1500px);
+  --transparent: transparent;
+  --background-highlight: rgba(92, 125, 141, 0.11);
+  --background-highlight-soft: rgba(127, 162, 179, 0.07);
+  --background-glow: rgba(49, 57, 63, 0.1);
+  --background-grid: rgba(77, 159, 224, 0.04);
+  --shadow-raised: rgba(0, 0, 0, 0.3);
+  --shadow-panel: rgba(0, 0, 0, 0.4);
+  --glow-hover: rgba(127, 162, 179, 0.2);
 }
