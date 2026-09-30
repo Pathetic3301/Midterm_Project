@@ -117,11 +117,36 @@ body > header {
   color: var(--accent);
 }
 
- footer {
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem  3.5rem;
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+    margin-right: 0;
+  }
+
+  .nav-links > li {
+    padding-right: 0.6rem;
+  }
+
+  .nav-links > li > a {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .nav-links > li:hover > a {
+    letter-spacing: 0;
+  }
 }
